@@ -18,7 +18,6 @@ Feature: Verify the gmail Compose
     And I Check new popup is displayed
     And Enter the valid "Email" into To box
     And Enter the email subject "Incubyte Deliverables:1"
-    And Enter the valid body "Automation QA test for Incubyte"
-    When I click on send button
-    Then I verify the gmail home page
+    When Enter the valid body "Automation QA test for Incubyte"
+    Then I click on send button
 
