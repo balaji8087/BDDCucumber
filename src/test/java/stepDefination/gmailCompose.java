@@ -12,33 +12,34 @@ public class gmailCompose {
     @Given("^I Click on Compose email$")
     public void i_click_on_compose_email() {
         driver.findElement(By.linkText("Compose")).click();
-        throw new io.cucumber.java.PendingException();
+
     }
     @And("^I Check new popup is displayed$")
     public void i_check_new_popup_is_displayed() {
         String s1="New Message";
         String s2 = driver.findElement(By.xpath("//*[@id=\":1wo\"]/h2/div[2]")).getText();
         Assert.assertEquals(s1, s2);
-        throw new io.cucumber.java.PendingException();
+
     }
     @And("^Enter the valid \"(.*)\" into To box$")
     public void enter_the_valid_into_to_box(String email) {
         driver.findElement(By.xpath("//input[@id=':2bp']")).sendKeys(email);
-        throw new io.cucumber.java.PendingException();
+
     }
     @And("^Enter the email subject \"(.*)\"$")
     public void enter_the_email_subject(String sub) {
         driver.findElement(By.xpath("//input[@id=':27s']")).sendKeys(sub);
-        throw new io.cucumber.java.PendingException();
+
     }
     @And("^Enter the valid body \"(.*)\"$")
     public void enter_the_valid_body_automation_qa_test_for_incubyte(String body) {
         driver.findElement(By.xpath("//div[@id=':291']")).sendKeys(body);
-        throw new io.cucumber.java.PendingException();
+
     }
     @When("^I click on send button$")
     public void i_click_on_send_button() {
         driver.findElement(By.xpath("//div[@id=':om']")).click();
-        throw new io.cucumber.java.PendingException();
+        driver.close();
+
     }
 }

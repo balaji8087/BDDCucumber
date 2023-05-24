@@ -5,9 +5,9 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src\\test\\resources\\features\\gmailCompose.feature",
+@CucumberOptions(features="C:\\Users\\June21_1\\IdeaProjects\\Sel\\src\\test\\resources\\features\\gmailCompose.feature",
                     glue={"stepDefination"},
-                    dryRun = true,
+                    dryRun = false,
                     publish = true,
                     monochrome = true)
 public class testRunner {
